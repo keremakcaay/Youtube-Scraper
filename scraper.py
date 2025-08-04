@@ -7,7 +7,7 @@ import datetime
 import webbrowser
 
 # ---------------- YouTube API ----------------
-API_KEY = "AIzaSyDtxIKDaCQTAbuftIZMDRcoKItHjOLc7Fw"
+API_KEY = ""
 youtube = build("youtube", "v3", developerKey=API_KEY)
 
 # ---------------- PostgreSQL Config ----------------
@@ -199,3 +199,4 @@ tree.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
 tree.bind("<Double-1>", open_link)
 
 app.mainloop()
+
