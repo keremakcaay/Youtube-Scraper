@@ -13,9 +13,9 @@ youtube = build("youtube", "v3", developerKey=API_KEY)
 # ---------------- PostgreSQL Config ----------------
 DB_HOST = "localhost"
 DB_NAME = "youtubescrape"
-DB_USER = "postgres"
-DB_PASS = "Keremik.16"
-DB_PORT = "5432"
+DB_USER = ""
+DB_PASS = ""
+DB_PORT = ""
 
 def connect_db():
     return psycopg2.connect(
@@ -199,4 +199,5 @@ tree.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
 tree.bind("<Double-1>", open_link)
 
 app.mainloop()
+
 
